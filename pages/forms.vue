@@ -185,7 +185,7 @@ export default {
   },
   head() {
     return {
-      title: 'Forms — Admin Null Nuxt.js Bulma',
+      title: 'Forms',
     }
   },
 }

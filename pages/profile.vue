@@ -55,7 +55,7 @@ export default {
   },
   head() {
     return {
-      title: 'Profile — Admin Null Nuxt.js Bulma',
+      title: 'Profile',
     }
   },
 }

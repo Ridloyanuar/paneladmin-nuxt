@@ -252,7 +252,7 @@ export default {
   },
   head() {
     return {
-      title: 'Client — Admin Null Nuxt.js Bulma',
+      title: 'Client',
     }
   },
 }

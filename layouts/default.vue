@@ -31,13 +31,8 @@ export default {
             label: 'Dashboard',
           },
         ],
-        'Examples',
+        'Menu',
         [
-          {
-            action: 'dark-mode-toggle',
-            label: 'Dark / White',
-            icon: 'weather-night',
-          },
           {
             to: '/tables',
             label: 'Tables',
@@ -72,11 +67,6 @@ export default {
         ],
         'About',
         [
-          {
-            href: 'https://admin-null-nuxt.justboil.me',
-            label: 'Premium Demo',
-            icon: 'credit-card',
-          },
           {
             href: 'https://justboil.me/bulma-admin-template/null-nuxt',
             label: 'About',

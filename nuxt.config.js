@@ -85,21 +85,33 @@ export default {
    ** Nuxt.js modules
    */
   modules: [
-    // Doc: https://buefy.github.io/#/documentation
     ['nuxt-buefy', { materialDesignIcons: false }],
-    // Doc: https://axios.nuxtjs.org/usage
     '@nuxtjs/axios',
     '@nuxtjs/pwa',
+    '@nuxtjs/auth',
   ],
-  /*
-   ** Axios module configuration
-   ** See https://axios.nuxtjs.org/options
-   */
-  axios: {},
-  /*
-   ** Build configuration
-   ** See https://nuxtjs.org/api/configuration-build/
-   */
+
+  auth: {
+    strategies: {
+      local: {
+        endpoints: {
+          login: { url: '/super/login', method: 'post', propertyName: 'Data' },
+          user: { url: '/super/me', method: 'get', propertyName: 'Data' },
+        },
+        tokenRequired: true,
+        tokenType: 'Bearer ',
+      },
+    },
+  },
+
+  axios: {
+    baseURL: 'http://localhost:8000/',
+  },
+
+  router: {
+    middleware: ['auth'],
+  },
+
   build: {
     /*
      ** You can extend webpack config here

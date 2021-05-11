@@ -80,7 +80,7 @@ export default {
   },
   head() {
     return {
-      title: 'Tables — Admin Null Nuxt.js Bulma',
+      title: 'Tables',
     }
   },
 }
